@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redim - Rastreabilidade de Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/murilin2 (1).png">
+</head>
+
+<header>
+    <div class="container header-content">
+        <img src="img/murilin.png" alt="Logo Redim" class="logo">
+        <div>
+            <h1>Redim</h1>
+            <p>VW - SPIN 2AP</p>
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <main class="container">
+        <section class="rastreamento">
+            <h2>Rastrear Produto</h2>
+            <form id="formRastreamento">
+                <input type="text" id="codigoProduto" placeholder="Digite o código do produto" required>
+                <button type="submit">Rastrear</button>
+            </form>
+
+            <div id="resultado" class="resultado">
+                <h3>Processos do Produto</h3>
+                <table id="tabelaProcessos">
+                    <thead>
+                        <tr>
+                            <th>Código do Produto</th>
+                            <th>Etapa</th>
+                            <th>Data</th>
+                            <th>Tempo estimado</th>
+                            <th>Cliente
+                            </th>
+                            <th>Operador</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table> <br>
+
+                <table id="tabelaProcessos2">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="Tetapas">
+                                    Compra registrada
+                                </div>
+
+                                <div class="circulos-container">
+                                    <div id="cEtapa1" class="circulo"></div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="Tetapas">
+                                    Montagem dos meios em andamento
+                                </div>
+                                <div class="circulos-container">
+                                    <div id="cEtapa2" class="circulo"></div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="Tetapas">
+                                    Montagem das quinas em andamento
+                                </div>
+
+                                <div class="circulos-container">
+                                    <div id="cEtapa3" class="circulo"></div>
+                                </div>
+                            </th>
+
+                            <th>
+                                <div class="Tetapas">
+                                    Ajuste dos parafusos em andamento
+                                </div>
+
+                                <div class="circulos-container">
+                                    <div id="cEtapa4" class="circulo"></div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="Tetapas">
+                                    Testes de qualidade em andamento
+                                </div>
+
+                                <div class="circulos-container">
+                                    <div id="cEtapa5" class="circulo"></div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="Tetapas">
+                                    Montagem das tampas em andamento
+                                </div>
+                                <div class="circulos-container">
+                                    <div id="cEtapa6" class="circulo"></div>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="Tetapas">
+                                    Montagem finalizada
+                                </div>
+                                <div class="circulos-container">
+                                    <div id="cEtapa7" class="circulo"></div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+        <div class="btn-centro">
+            <a href="estoque.html" class="btn"> Comprar Produto </a>
+        </div>
+    </main>
+
+
+
+    <script src="js/rastreamento.js"></script>
+    <script type="module" src="FireBase/firebase-sync.js"></script>
+</body>
+<footer>
+    <p>&copy; 2025 Redim. Todos os direitos reservados a Matheus Ativo e Maki Yoshitake.</p>
+</footer>
+
+</html>

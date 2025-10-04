@@ -1,0 +1,148 @@
+create database redim;
+use chave_estrangeira;
+
+create table usuario(
+    codigos int primary key,
+    nome varchar(200)
+);
+
+create table coisas{
+    coisas1 int
+}
+
+--  var coisas1 = JSON.parse(localStorage.getItem("coisas1")) || [];
+-- essa var e usada para separar cada codigo em uma etapa
+-- var index = codigos.findIndex(c => c.codigo === codigo);
+--etapa = coisas1[index]
+
+--  salva códigos no localStorage, essa var tá salvando os codigos ex 0001 e os nomes ex matheus, inclusive eu fiz ela como uma matriz ta ligado
+--  var codigos = JSON.parse(localStorage.getItem("codigos")) || [];
+-- codigos.push({ codigo, nome, });
+--
+--
+--
+--eu vou fazer um console.log ai da para a gente acompanhar o funcionamento, ai fica mais facil de te explicar
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--

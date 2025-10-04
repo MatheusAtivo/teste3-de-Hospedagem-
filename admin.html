@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+    
+    <link rel="icon" type="image/png" href="img/murilin2 (1).png">
+</head>
+<header>
+    <div class="container header-content">
+        <img src="img/murilin.png" alt="Logo Redim" class="logo">
+        <div>
+            <h1>Admin</h1>
+            <p>VW - SPIN 2AP</p>
+        </div>
+    </div>
+</header>
+<body class="padding1">
+    
+  
+    <br>
+    <h3>Etapas do Codigo:</h3> <br>
+    <input type="number" id="codigo2" placeholder="Digite o código do produto" required> <br>
+    <div class="container-botoes">
+        <button class="btn-circle" id="b1" onclick="b1()" title="Compra registrada"></button>
+        <button class="btn-circle" id="b2" onclick="b2()" title="Montagem dos meios em andamento"></button>
+        <button class="btn-circle" id="b3" onclick="b3()" title="Montagem das quinas em andamento"></button>
+        <button class="btn-circle" id="b4" onclick="b4()" title="Ajuste dos parafusos em andamento"></button>
+        <button class="btn-circle" id="b5" onclick="b5()" title="Testes de qualidade em andamento"></button>
+        <button class="btn-circle" id="b6" onclick="b6()" title="Montagem das tampas em andamento"></button>
+        <button class="btn-quadrado" id="b7" onclick="b7()" title="Montagem finalizada">Finalizar</button>
+        <button class="btn-quadrado" id="b8" onclick="b8()">Resetar</button>
+        <button class="btn-quadrado" id="b9" onclick="b9()">Atualizar</button>
+    </div>
+
+<h3>Verificar em qual etapa o produto está:</h3>
+<button class="btn-quadrado" id="b11" onclick="b11()">Verificar</button></h3>
+
+<br>
+<div id="EtapasAdmin"></div>
+<br>
+
+    <h3>Criar códigos <input id="codigo3" placeholder="Digite o nome do comprador" required>  
+        <button class="btn-quadrado" id="b10" onclick="b10()">Criar</button></h3>
+ 
+  
+    <h1 id="Lista">Lista de códigos:</h1>
+<div >
+    <div id="codigos-container">
+
+    </div>
+</div>
+
+  <button type="button" id="resetar">Resetar códigos</button>
+
+    <script src="js/script2.js"></script>
+    <script src="js/codigos.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/rastreamento.js"></script>
+
+    <script type="module" src="FireBase/firebase-sync.js"></script>
+
+</body>
+
+
+<footer>
+    <p>&copy; 2025 Redim. Todos os direitos reservados a Matheus Ativo e Maki Yoshitake.</p>
+</footer>
+
+</html>

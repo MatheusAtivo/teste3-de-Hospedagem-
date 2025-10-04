@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+/* HEADER */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tabelaCodigos {
+  background-color: rgb(127, 255, 238);
+  color: aqua;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border: 3px solid black;
+  display: none;
+  width: 100px;
+}
+
+/* Tabela codigos-container */
+.tabela-codigos {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tabela-codigos th, .tabela-codigos td {
+  padding: 10px 6px;
+  text-align: left;
+}
+.tabela-codigos thead {
+  background: #003366;
+  color: #fff;
+}
+.tabela-codigos tbody tr:nth-child(even) {
+  background: #f4f6f8;
+}
+.tabela-codigos tbody tr:hover {
+  background: #e0f7fa;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+  margin-top: auto;
+}
